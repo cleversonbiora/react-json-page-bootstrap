@@ -1,0 +1,46 @@
+{
+    "id":"mainDiv",
+    "type":"div",
+    "className":"col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content",
+    "controls":[
+    {
+        "id":"mainForm",
+        "type":"form",
+        "method":"get",
+        "target":"_blank",
+        "async":false,
+        "onResult":"f3",
+        "onError":"f2",
+        "action":"https://jsonplaceholder.typicode.com/posts/42",
+        "className":"form",
+        "controls":[
+            {
+                "id":"newEmail",
+                "name":"newEmail",
+                "type":"FormGroup",
+                "inputType":"email",
+                "label":"Email address",
+                "placeholder":"Enter email",
+                "ariaDescribedby":"We'll never share your email with anyone else.",
+                "validation":{
+                    "output":"emailError",
+                    "validators":[{
+                                    "type":"required",
+                                    "msg":"Campo obrigatório."
+                                },
+                                {
+                                    "type":"email",
+                                    "msg":"Email inválido."
+                                }]
+                }
+            },
+            {
+                "id":"btnSubmit",
+                "type":"submit",
+                "className":"btn btn-primary",
+                "value":"Submit form"
+            }
+        ]
+    }]
+}
+        
