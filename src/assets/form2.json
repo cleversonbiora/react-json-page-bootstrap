@@ -8,7 +8,7 @@
         "type":"form",
         "method":"get",
         "target":"_blank",
-        "async":false,
+        "async":true,
         "onResult":"f3",
         "onError":"f2",
         "action":"https://jsonplaceholder.typicode.com/posts/42",
