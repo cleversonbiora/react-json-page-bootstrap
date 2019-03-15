@@ -8,7 +8,7 @@ import { createStore } from 'redux';
 import { Reducers } from 'react-json-page';
 import { combineReducers } from 'redux';
 
-export const ReducersApp = combineReducers({
+  export const ReducersApp = combineReducers({
     dynamicFormState: Reducers
   });
   export const Store = createStore(ReducersApp);

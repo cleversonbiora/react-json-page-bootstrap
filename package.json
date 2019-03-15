@@ -5,7 +5,7 @@
     "bootstrap": "^4.3.1",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-json-page": "^1.1.0"
+    "react-json-page": "^1.2.5"
   },
   "scripts": {
     "start": "react-scripts start",

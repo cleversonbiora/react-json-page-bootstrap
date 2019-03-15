@@ -2,7 +2,7 @@
     "id":"mainDiv",
     "type":"div",
     "className":"col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content",
-    "controls":[
+    "children":[
     {
         "id":"mainForm",
         "type":"form",
@@ -13,7 +13,7 @@
         "onError":"f2",
         "action":"https://jsonplaceholder.typicode.com/posts/42",
         "className":"form",
-        "controls":[
+        "children":[
             {
                 "id":"newEmail",
                 "name":"newEmail",

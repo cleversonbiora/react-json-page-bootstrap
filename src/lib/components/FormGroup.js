@@ -4,7 +4,6 @@ import {SchemaField} from 'react-json-page';
 class FormGroup extends Component {
     constructor(props) {
         super(props);
-        console.log(props);
         const 
         {
             label,
@@ -17,10 +16,10 @@ class FormGroup extends Component {
         this.view = {
             type:"div",
             className:"form-group",
-            controls:[]
+            children:[]
         }
         if(props.label){
-            this.view.controls.push(
+            this.view.children.push(
                 {
                     type:"label",
                     htmlFor:props.id,
@@ -28,7 +27,7 @@ class FormGroup extends Component {
                 }
             );
         }
-        this.view.controls.push(
+        this.view.children.push(
             {
                 id:props.id,
                 type:inputType || 'text',
@@ -47,7 +46,7 @@ class FormGroup extends Component {
         });
         if(ariaDescribedby){
             
-            this.view.controls.push(
+            this.view.children.push(
                 {
                     id:`${props.id}Help`,
                     type:"small",
@@ -58,7 +57,7 @@ class FormGroup extends Component {
             );
         }
         if(props.validation){          
-            this.view.controls.push(
+            this.view.children.push(
                 {
                     type:"div",
                     className:"invalid-feedback d-block",
