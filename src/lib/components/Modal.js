@@ -10,7 +10,7 @@ class Modal extends Component {
             label,
             title,
             id,
-            children,
+            bodyChildren,
             footerchildren,
         } = props;
         this.view = {
@@ -47,21 +47,14 @@ class Modal extends Component {
                                             className:"close",
                                             "data-dismiss": "modal", 
                                             "aria-label":"Close",
-                                            children:[
-                                                {
-                                                    type:"span",
-                                                    className:"modal-title",
-                                                    "aria-hidden": "true",
-                                                    value: "&times;"
-                                                }
-                                            ]
+                                            value: "×"
                                         }
                                     ]
                                 },
                                 {
                                     type:"div",
                                     className:"modal-body",
-                                    children: children
+                                    children: bodyChildren
                                 },
                                 {
                                     type:"div",

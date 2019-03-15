@@ -1,26 +1,18 @@
 import React, { Component } from 'react';
-import {SchemaField} from 'react-json-page';
 
 class ModalButton extends Component {
-    constructor(props) {
-        super(props);
-        const 
-        {
-            target,
-            ...inputProps 
-        } = props;
-        this.view = {
-            type:"button",
-            "data-toggle":"modal", 
-            "data-target":`#${target}`,
-            ...inputProps 
-        }
-
-    }
 
   render() {
+    const 
+    {
+        target,
+        value,
+        ...inputProps 
+    } = this.props;
     return (
-        <SchemaField {...this.view} />
+      <button type="button" className="btn btn-primary" data-toggle="modal" data-target={`#${target}`} {...inputProps }>
+          {value}
+      </button>
     );
   }
 }

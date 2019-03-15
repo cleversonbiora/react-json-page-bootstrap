@@ -3,7 +3,6 @@ import {DynamicPage} from 'react-json-page'
 import FormGroup from './components/FormGroup'
 import Modal from './components/Modal'
 import ModalButton from './components/ModalButton'
-import 'bootstrap/dist/css/bootstrap.css';
 
 class DynamicBootstrapPage extends Component {
   constructor(props) {
