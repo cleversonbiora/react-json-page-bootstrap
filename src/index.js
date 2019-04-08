@@ -7,6 +7,7 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import { Reducers } from 'react-json-page';
 import { combineReducers } from 'redux';
+import 'bootstrap/dist/css/bootstrap.css';
 
   export const ReducersApp = combineReducers({
     dynamicFormState: Reducers

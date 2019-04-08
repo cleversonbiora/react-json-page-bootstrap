@@ -4,22 +4,35 @@
     "className":"col-12 col-md-9 col-xl-8 py-md-3 pl-md-5 bd-content",
     "children":[
         {
-            "type":"Modal",
-            "title":"Modal",
-            "id":"testModal",
-            "bodyChildren":[
+            "id":"btnModal",
+            "type":"Button",
+            "color":"primary",
+            "children":[
                 {
-                    "type":"p",
-                    "value":"Amendoim"
+                    "type":"fragment",
+                    "value":"Danger!"
+                },
+                {
+                    "type":"Badge",
+                    "color":"danger",
+                    "children":[
+                        {
+                            "type":"fragment",
+                            "value":"4"
+                        }
+                    ]
                 }
             ]
         },
         {
-            "id":"btnModal",
-            "type":"ModalButton",
-            "target":"testModal",
-            "className":"btn btn-primary",
-            "value":"Open"
+            "type":"Alert",
+            "color":"danger",
+            "children":[
+                {
+                    "type":"fragment",
+                    "value":"Teste"
+                }
+            ]
         }
     ]
 }
